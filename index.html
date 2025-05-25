@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Контакты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="noise-bg"></div>
+    <div class="gradient-bg"></div>
+    <div id="particles-js"></div>
+    
+    <div class="container">
+        <div class="profile-card">
+            <img src="ava.jpg" alt="Фото профиля" class="profile-image">
+            <h1 class="profile-title glitch" data-text="МОИ КОНТАКТЫ">МОИ КОНТАКТЫ</h1>
+            
+            <div class="profile-subtitle typewriter" style="--i:1" data-text="Инициализация соединения..."></div>
+            <div class="profile-subtitle typewriter" style="--i:2" data-text="Проверка безопасности..."></div>
+            <div class="profile-subtitle typewriter" style="--i:3" data-text="Доступ получен"></div>
+            
+            <div class="activity-indicator">
+                <div class="activity-dot"></div>
+                <div class="activity-label">Система активна</div>
+            </div>
+            <div class="profile-subtitle" style="--i:4">Контактная информация:</div>
+            
+            <a href="https://t.me/godpentest" class="contact-button">
+                <img src="DD.png" alt="Telegram" style="width: auto; height: auto;">
+                <span>@godpentest</span>
+            </a>
+        </div>
+        
+        <div class="links-section">
+            <h2 class="section-title">Rutor Admin</h2>
+            <img src="TORICON.png" alt="Tor Browser" style="width: 80px; height: 80px; margin: 0 auto 20px; display: block;">
+            
+            <div class="profile-subtitle" style="--i:5">Официальный сайт и зеркала для безопасного доступа через Tor Browser</div>
+            
+            <div class="links-grid">
+                <a href="https://rutor-24.com" class="link-item">
+                    <span>rutor-24.com</span>
+                    <div class="badge">Официальный</div>
+                </a>
+                <a href="https://rutor-24.com" class="link-item">
+                    <span>Mirror 1</span>
+                </a>
+                <a href="https://rutor-24.com" class="link-item">
+                    <span>Mirror 2</span>
+                </a>
+                <a href="https://rutor-24.com" class="link-item">
+                    <span>Mirror 3</span>
+                </a>
+            </div>
+        </div>
+        
+        <div class="stats-section">
+            <h2 class="section-title">Статистика</h2>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-value">1337</div>
+                    <div class="stat-label">Успешных операций</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">256</div>
+                    <div class="stat-label">Активных клиентов</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">99.9%</div>
+                    <div class="stat-label">Безопасность</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">24/7</div>
+                    <div class="stat-label">Поддержка</div>
+                </div>
+            </div>
+        </div>
+        
+
+        
+        <div class="security-section">
+            <h2 class="section-title glitch" data-text="Уровень защиты">Уровень защиты</h2>
+            <div class="security-container">
+                <div class="security-level-container">
+                    <div class="security-level-bar">
+                        <div class="security-level-progress" id="securityLevelBar"></div>
+                        <div class="security-level-scan"></div>
+                    </div>
+                    <div class="security-level-value" id="securityLevelValue">87%</div>
+                </div>
+                
+                <div class="security-details">
+                    <div class="security-detail-item">
+                        <div class="security-detail-label">Шифрование</div>
+                        <div class="security-detail-value encrypt-text" data-text="AES-256">Загрузка...</div>
+                    </div>
+                    <div class="security-detail-item">
+                        <div class="security-detail-label">Брандмауэр</div>
+                        <div class="security-detail-value encrypt-text" data-text="Активен">Загрузка...</div>
+                    </div>
+                    <div class="security-detail-item">
+                        <div class="security-detail-label">Прокси</div>
+                        <div class="security-detail-value encrypt-text" data-text="Многослойный">Загрузка...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="map-section">
+            <h2 class="section-title glitch" data-text="Глобальная сеть">Глобальная сеть</h2>
+            <div class="map-container">
+                <div id="world-map"></div>
+                <div class="map-stats">
+                    <div class="map-stat-item">
+                        <div class="map-stat-value">127</div>
+                        <div class="map-stat-label">Активных узлов</div>
+                    </div>
+                    <div class="map-stat-item">
+                        <div class="map-stat-value">43</div>
+                        <div class="map-stat-label">Страны</div>
+                    </div>
+                    <div class="map-stat-item">
+                        <div class="map-stat-value">99.8%</div>
+                        <div class="map-stat-label">Доступность</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="reviews-section">
+            <h2 class="section-title glitch" data-text="Анонимные отзывы">Анонимные отзывы</h2>
+            <div class="reviews-grid">
+                <div class="review-item">
+                    <div class="review-header">
+                        <img src="sss.png" alt="Анонимный пользователь" class="review-avatar">
+                        <div class="review-info">
+                            <div class="review-name">USER</div>
+                            <div class="review-date">20.05.2025</div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        Отличный сервис, всё работает стабильно. Безопасность на высшем уровне. Рекомендую всем, кто ценит конфиденциальность и надежность.
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <img src="sss.png" alt="Анонимный пользователь" class="review-avatar">
+                        <div class="review-info">
+                            <div class="review-name">USER</div>
+                            <div class="review-date">15.05.2025</div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star half">★</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        Использую больше года, ни разу не было проблем с доступом. Техподдержка отвечает быстро. Единственное, хотелось бы больше зеркал.
+                    </div>
+                </div>
+                
+                <div class="review-item">
+                    <div class="review-header">
+                        <img src="sss.png" alt="Анонимный пользователь" class="review-avatar">
+                        <div class="review-info">
+                            <div class="review-name">USER</div>
+                            <div class="review-date">10.05.2025</div>
+                        </div>
+                        <div class="review-rating">
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                            <span class="star">★</span>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        Лучший сервис из всех, что я пробовал. Шифрование работает безупречно, интерфейс понятный. Особенно ценю возможность анонимного доступа через Tor.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>[SYSTEM] © 2025 // ДОСТУП ОГРАНИЧЕН // ВСЕ ПРАВА ЗАЩИЩЕНЫ</p>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson@3"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Глитч-эффект для заголовков
+            const glitchElements = document.querySelectorAll('.glitch');
+            
+            function applyGlitch() {
+                glitchElements.forEach(element => {
+                    if (Math.random() > 0.85) { // Увеличиваем вероятность глитча
+                        element.classList.add('active');
+                        setTimeout(() => {
+                            element.classList.remove('active');
+                        }, 100 + Math.random() * 200); // Уменьшаем длительность
+                    }
+                });
+            }
+            
+            setInterval(applyGlitch, 800); // Уменьшаем интервал
+            
+            // Интерактивная карта мира
+            const width = document.getElementById('world-map').clientWidth;
+            const height = 300;
+            
+            const svg = d3.select('#world-map')
+                .append('svg')
+                .attr('width', width)
+                .attr('height', height);
+                
+            const projection = d3.geoMercator()
+                .scale(width / 6)
+                .translate([width / 2, height / 1.5]);
+                
+            const path = d3.geoPath().projection(projection);
+            
+            // Загружаем данные карты мира
+            d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-110m.json')
+                .then(data => {
+                    const countries = topojson.feature(data, data.objects.countries).features;
+                    
+                    // Рисуем страны
+                    svg.selectAll('path')
+                        .data(countries)
+                        .enter()
+                        .append('path')
+                        .attr('d', path)
+                        .attr('fill', 'rgba(255, 58, 78, 0.1)')
+                        .attr('stroke', 'rgba(255, 58, 78, 0.5)')
+                        .attr('stroke-width', 0.5);
+                    
+                    // Добавляем случайные точки подключений
+                    const connections = 30;
+                    const nodes = [];
+                    
+                    for (let i = 0; i < connections; i++) {
+                        const x = Math.random() * width;
+                        const y = Math.random() * height;
+                        nodes.push({x, y, size: 2 + Math.random() * 3});
+                    }
+                    
+                    // Рисуем точки
+                    svg.selectAll('circle')
+                        .data(nodes)
+                        .enter()
+                        .append('circle')
+                        .attr('cx', d => d.x)
+                        .attr('cy', d => d.y)
+                        .attr('r', d => d.size)
+                        .attr('fill', 'var(--primary-color)');
+                    
+                    // Анимация пульсации точек
+                    function pulseNodes() {
+                        svg.selectAll('circle')
+                            .transition()
+                            .duration(1500)
+                            .attr('r', d => d.size * (0.5 + Math.random()))
+                            .transition()
+                            .duration(1500)
+                            .attr('r', d => d.size)
+                            .on('end', pulseNodes);
+                    }
+                    
+                    pulseNodes();
+                    
+                    // Добавляем случайные линии соединений
+                    const lines = [];
+                    for (let i = 0; i < connections / 2; i++) {
+                        const source = nodes[Math.floor(Math.random() * nodes.length)];
+                        const target = nodes[Math.floor(Math.random() * nodes.length)];
+                        if (source !== target) {
+                            lines.push({source, target});
+                        }
+                    }
+                    
+                    // Рисуем линии
+                    svg.selectAll('line')
+                        .data(lines)
+                        .enter()
+                        .append('line')
+                        .attr('x1', d => d.source.x)
+                        .attr('y1', d => d.source.y)
+                        .attr('x2', d => d.target.x)
+                        .attr('y2', d => d.target.y)
+                        .attr('stroke', 'var(--primary-color)')
+                        .attr('stroke-width', 0.5)
+                        .attr('stroke-opacity', 0.3);
+                });
+            
+            // Инициализируем эффект печатающегося текста
+            const typewriterElements = document.querySelectorAll('.typewriter');
+            
+            typewriterElements.forEach((element, index) => {
+                const text = element.getAttribute('data-text');
+                element.textContent = '';
+                
+                setTimeout(() => {
+                    let i = 0;
+                    const interval = setInterval(() => {
+                        if (i < text.length) {
+                            element.textContent += text.charAt(i);
+                            i++;
+                        } else {
+                            clearInterval(interval);
+                        }
+                    }, 50);
+                }, index * 1000);
+            });
+            
+            // Инициализируем эффект шифрования/дешифрования
+            const encryptElements = document.querySelectorAll('.encrypt-text');
+            
+            function generateRandomChar() {
+                const chars = '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*()_+{}|:<>?[];\',./';
+                return chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            
+            function encryptText(element) {
+                const originalText = element.getAttribute('data-text');
+                const length = originalText.length;
+                let encryptedText = '';
+                
+                for (let i = 0; i < length; i++) {
+                    encryptedText += generateRandomChar();
+                }
+                
+                element.textContent = encryptedText;
+            }
+            
+            function decryptText(element) {
+                const originalText = element.getAttribute('data-text');
+                element.textContent = originalText;
+            }
+            
+            // Инициализируем шифрование
+            encryptElements.forEach((element, index) => {
+                setTimeout(() => {
+                    // Сначала показываем зашифрованный текст
+                    let count = 0;
+                    const maxCount = 5;
+                    
+                    const encryptInterval = setInterval(() => {
+                        encryptText(element);
+                        count++;
+                        
+                        if (count >= maxCount) {
+                            clearInterval(encryptInterval);
+                            decryptText(element);
+                        }
+                    }, 100);
+                }, 3000 + index * 500);
+                
+                // Добавляем эффект при наведении
+                element.addEventListener('mouseenter', () => {
+                    let count = 0;
+                    const maxCount = 5;
+                    
+                    const encryptInterval = setInterval(() => {
+                        encryptText(element);
+                        count++;
+                        
+                        if (count >= maxCount) {
+                            clearInterval(encryptInterval);
+                            decryptText(element);
+                        }
+                    }, 100);
+                });
+            });
+            
+            // Инициализируем индикатор уровня защиты
+            const securityLevelBar = document.getElementById('securityLevelBar');
+            const securityLevelValue = document.getElementById('securityLevelValue');
+            
+            function updateSecurityLevel() {
+                // Случайное значение от 85 до 95
+                const level = 85 + Math.floor(Math.random() * 10);
+                securityLevelBar.style.width = level + '%';
+                securityLevelValue.textContent = level + '%';
+                
+                // Изменяем цвет в зависимости от уровня
+                if (level < 70) {
+                    securityLevelBar.style.backgroundColor = '#ff3a4e';
+                } else if (level < 85) {
+                    securityLevelBar.style.backgroundColor = '#ff9500';
+                } else {
+                    securityLevelBar.style.backgroundColor = '#00ff9d';
+                }
+            }
+            
+            // Обновляем уровень защиты каждые 10 секунд
+            updateSecurityLevel();
+            setInterval(updateSecurityLevel, 10000);
+            
+            // Обновляем статистику карты случайным образом
+            function updateMapStats() {
+                const mapStatValues = document.querySelectorAll('.map-stat-value');
+                mapStatValues.forEach(element => {
+                    const currentValue = parseFloat(element.textContent);
+                    // Добавляем небольшое случайное изменение
+                    let newValue;
+                    if (element.textContent.includes('%')) {
+                        // Для процентов делаем очень маленькие изменения
+                        newValue = (currentValue + (Math.random() * 0.2 - 0.1)).toFixed(1);
+                        if (newValue > 99.9) newValue = 99.9;
+                        if (newValue < 99.5) newValue = 99.5;
+                        element.textContent = newValue + '%';
+                    } else {
+                        // Для числовых значений
+                        newValue = Math.round(currentValue + (Math.random() * 6 - 3));
+                        if (newValue < 1) newValue = 1;
+                        element.textContent = newValue;
+                    }
+                });
+            }
+            
+            setInterval(updateMapStats, 5000);
+            
+            // Инициализируем частицы
+            particlesJS("particles-js", {
+                "particles": {
+                    "number": {
+                        "value": 50,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ff3a4e"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.3,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ff3a4e",
+                        "opacity": 0.2,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+            
+            // Анимация текста
+            const textElements = document.querySelectorAll('.profile-subtitle');
+            textElements.forEach((element) => {
+                const text = element.textContent;
+                element.textContent = '';
+                
+                let i = 0;
+                const typeInterval = setInterval(() => {
+                    if (i < text.length) {
+                        element.textContent += text.charAt(i);
+                        i++;
+                    } else {
+                        clearInterval(typeInterval);
+                    }
+                }, 50);
+            });
+        });
+    </script>
+</body>
+</html>
